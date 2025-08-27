@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.opencagedata.com/geocode/v1/json?key=<OPENCAGE_API_KEY>&q=Test%20Address
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - opencage-ruby/3.2.4 Ruby/3.3.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Wed, 27 Aug 2025 02:30:23 GMT
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '440'
+      Content-Type:
+      - application/json; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: '{"documentation":"https://opencagedata.com/api","licenses":[{"name":"see
+        attribution guide","url":"https://opencagedata.com/credits"}],"results":[],"status":{"code":401,"message":"invalid
+        API key"},"stay_informed":{"blog":"https://blog.opencagedata.com","mastodon":"https://en.osm.town/@opencage"},"thanks":"For
+        using an OpenCage API","timestamp":{"created_http":"Wed, 27 Aug 2025 02:30:23
+        GMT","created_unix":1756261823},"total_results":0}'
+  recorded_at: Wed, 27 Aug 2025 02:30:24 GMT
+recorded_with: VCR 6.3.1

@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.open-meteo.com/v1/forecast?current=temperature,windspeed&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&forecast_days=7&latitude=40.7128&longitude=-74.006&precipitation_unit=mm&temperature_unit=fahrenheit&timezone=auto&wind_speed_unit=kmh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.13.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Aug 2025 02:38:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJsYXRpdHVkZSI6NDAuNzEwMzM1LCJsb25naXR1ZGUiOi03My45OTMwOSwiZ2VuZXJhdGlvbnRpbWVfbXMiOjAuMDkxNjcxOTQzNjY0NTUwNzgsInV0Y19vZmZzZXRfc2Vjb25kcyI6LTE0NDAwLCJ0aW1lem9uZSI6IkFtZXJpY2EvTmV3X1lvcmsiLCJ0aW1lem9uZV9hYmJyZXZpYXRpb24iOiJHTVQtNCIsImVsZXZhdGlvbiI6MzIuMCwiY3VycmVudF91bml0cyI6eyJ0aW1lIjoiaXNvODYwMSIsImludGVydmFsIjoic2Vjb25kcyIsInRlbXBlcmF0dXJlIjoiwrBGIiwid2luZHNwZWVkIjoia20vaCJ9LCJjdXJyZW50Ijp7InRpbWUiOiIyMDI1LTA4LTI2VDIyOjMwIiwiaW50ZXJ2YWwiOjkwMCwidGVtcGVyYXR1cmUiOjY3LjgsIndpbmRzcGVlZCI6MTAuMn0sImRhaWx5X3VuaXRzIjp7InRpbWUiOiJpc284NjAxIiwidGVtcGVyYXR1cmVfMm1fbWF4IjoiwrBGIiwidGVtcGVyYXR1cmVfMm1fbWluIjoiwrBGIiwicHJlY2lwaXRhdGlvbl9zdW0iOiJtbSJ9LCJkYWlseSI6eyJ0aW1lIjpbIjIwMjUtMDgtMjYiLCIyMDI1LTA4LTI3IiwiMjAyNS0wOC0yOCIsIjIwMjUtMDgtMjkiLCIyMDI1LTA4LTMwIiwiMjAyNS0wOC0zMSIsIjIwMjUtMDktMDEiXSwidGVtcGVyYXR1cmVfMm1fbWF4IjpbODAuMCw3Ni4xLDgwLjEsNzQuNyw3Ni4xLDc4LjgsNzYuMV0sInRlbXBlcmF0dXJlXzJtX21pbiI6WzYxLjQsNTguMCw1NC43LDY1LjUsNTkuMiw2Mi4xLDY2LjBdLCJwcmVjaXBpdGF0aW9uX3N1bSI6WzAuMDAsMC4wMCwwLjAwLDAuMTAsMC4wMCwwLjAwLDAuMDBdfX0=
+  recorded_at: Wed, 27 Aug 2025 02:38:29 GMT
+recorded_with: VCR 6.3.1

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.opencagedata.com/geocode/v1/json?key=<OPENCAGE_API_KEY>&q=San%20Francisco,%20CA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - opencage-ruby/3.2.4 Ruby/3.3.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Aug 2025 02:27:43 GMT
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '2500'
+      X-Ratelimit-Remaining:
+      - '2472'
+      X-Ratelimit-Reset:
+      - '1756339200'
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '4281'
+      Content-Type:
+      - application/json; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: '{"documentation":"https://opencagedata.com/api","licenses":[{"name":"see
+        attribution guide","url":"https://opencagedata.com/credits"}],"rate":{"limit":2500,"remaining":2472,"reset":1756339200},"results":[{"annotations":{"DMS":{"lat":"37\u00b0
+        46'' 45.33168'''' N","lng":"122\u00b0 25'' 9.58296'''' W"},"FIPS":{"state":"06"},"MGRS":"10SEG5113481482","Maidenhead":"CM87ss97qa","Mercator":{"x":-13627657.323,"y":4522109.816},"OSM":{"edit_url":"https://www.openstreetmap.org/edit?relation=111968#map=17/37.77926/-122.41933","note_url":"https://www.openstreetmap.org/note/new#map=17/37.77926/-122.41933&layers=N","url":"https://www.openstreetmap.org/?mlat=37.77926&mlon=-122.41933#map=17/37.77926/-122.41933"},"UN_M49":{"regions":{"AMERICAS":"019","NORTHERN_AMERICA":"021","US":"840","WORLD":"001"},"statistical_groupings":["MEDC"]},"callingcode":1,"currency":{"alternate_symbols":["US$"],"decimal_mark":".","disambiguate_symbol":"US$","html_entity":"$","iso_code":"USD","iso_numeric":"840","name":"United
+        States Dollar","smallest_denomination":1,"subunit":"Cent","subunit_to_unit":100,"symbol":"$","symbol_first":1,"thousands_separator":","},"flag":"\ud83c\uddfa\ud83c\uddf8","geohash":"9q8yym8bnuk8bqg9b0wm","qibla":18.84,"roadinfo":{"drive_on":"right","speed_in":"mph"},"sun":{"rise":{"apparent":1756301820,"astronomical":1756296240,"civil":1756300200,"nautical":1756298280},"set":{"apparent":1756262640,"astronomical":1756268220,"civil":1756264260,"nautical":1756266180}},"timezone":{"name":"America/Los_Angeles","now_in_dst":1,"offset_sec":-25200,"offset_string":"-0700","short_name":"PDT"},"what3words":{"words":"tested.fancy.theme"},"wikidata":"Q62"},"bounds":{"northeast":{"lat":37.9296678,"lng":-122.2814578},"southwest":{"lat":37.6403143,"lng":-123.173825}},"components":{"ISO_3166-1_alpha-2":"US","ISO_3166-1_alpha-3":"USA","ISO_3166-2":["US-CA"],"_category":"place","_normalized_city":"San
+        Francisco","_type":"city","city":"San Francisco","continent":"North America","country":"United
+        States","country_code":"us","state":"California","state_code":"CA"},"confidence":1,"formatted":"San
+        Francisco, California, United States of America","geometry":{"lat":37.7792588,"lng":-122.4193286}},{"annotations":{"DMS":{"lat":"35\u00b0
+        11'' 13.67880'''' N","lng":"117\u00b0 53'' 7.29240'''' W"},"FIPS":{"county":"06029","state":"06"},"MGRS":"11SMU1939294154","Maidenhead":"DM15be34sv","Mercator":{"x":-13122938.136,"y":4164718.202},"OSM":{"note_url":"https://www.openstreetmap.org/note/new#map=17/35.18713/-117.88536&layers=N","url":"https://www.openstreetmap.org/?mlat=35.18713&mlon=-117.88536#map=17/35.18713/-117.88536"},"UN_M49":{"regions":{"AMERICAS":"019","NORTHERN_AMERICA":"021","US":"840","WORLD":"001"},"statistical_groupings":["MEDC"]},"callingcode":1,"currency":{"alternate_symbols":["US$"],"decimal_mark":".","disambiguate_symbol":"US$","html_entity":"$","iso_code":"USD","iso_numeric":"840","name":"United
+        States Dollar","smallest_denomination":1,"subunit":"Cent","subunit_to_unit":100,"symbol":"$","symbol_first":1,"thousands_separator":","},"flag":"\ud83c\uddfa\ud83c\uddf8","geohash":"9qk0jmwebj122bxt76u0","qibla":23.95,"roadinfo":{"drive_on":"right","speed_in":"mph"},"sun":{"rise":{"apparent":1756300920,"astronomical":1756295580,"civil":1756299360,"nautical":1756297500},"set":{"apparent":1756261380,"astronomical":1756266720,"civil":1756262940,"nautical":1756264800}},"timezone":{"name":"America/Los_Angeles","now_in_dst":1,"offset_sec":-25200,"offset_string":"-0700","short_name":"PDT"},"what3words":{"words":"firebird.ivories.deeply"}},"components":{"ISO_3166-1_alpha-2":"US","ISO_3166-1_alpha-3":"USA","ISO_3166-2":["US-CA"],"_category":"place","_normalized_city":"California
+        City","_type":"city","continent":"North America","country":"United States
+        of America","country_code":"us","county":"Kern","state":"California","state_code":"CA","town":"California
+        City"},"confidence":8,"formatted":"California City, California, United States
+        of America","geometry":{"lat":35.187133,"lng":-117.885359}}],"status":{"code":200,"message":"OK"},"stay_informed":{"blog":"https://blog.opencagedata.com","mastodon":"https://en.osm.town/@opencage"},"thanks":"For
+        using an OpenCage API","timestamp":{"created_http":"Wed, 27 Aug 2025 02:27:43
+        GMT","created_unix":1756261663},"total_results":2}'
+  recorded_at: Wed, 27 Aug 2025 02:27:43 GMT
+recorded_with: VCR 6.3.1

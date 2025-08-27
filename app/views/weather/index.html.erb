@@ -1,0 +1,14 @@
+<div class="container" style="max-width: 800px; margin: 2rem auto;">
+  <h1>Weather Forecast</h1>
+  <p>Enter an address or city to see the forecast.</p>
+
+  <%= form_with url: weather_index_path, method: :post do %>
+    <div style="display:flex; gap:0.5rem; align-items:center;">
+      <%= text_field_tag :address, params[:address], placeholder: "e.g. 1 Apple Park Way,Cupertino", style: "flex:1; padding:0.6rem;" %>
+      <button type="submit" data-weather-target="button" style="padding:0.6rem 1rem;">Get forecast</button>
+    </div>
+  <% end %>
+
+  <%= turbo_frame_tag "forecast" do %>
+  <% end %>
+</div>
