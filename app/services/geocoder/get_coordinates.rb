@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require "dotenv/load"
-require "opencage/geocoder"
-
 module Geocoder
   class GetCoordinates
     def self.call(address)

@@ -2,32 +2,24 @@
 service: weather
 
 # Name of the container image.
-image: your-user/weather
+image: weather
 
 # Deploy to these servers.
 servers:
   web:
-    - 192.168.0.1
-  # job:
-  #   hosts:
-  #     - 192.168.0.1
-  #   cmd: bin/jobs
+    - localhost
 
 # Enable SSL auto certification via Let's Encrypt and allow for multiple apps on a single web server.
 # Remove this section when using multiple web servers and ensure you terminate SSL at your load balancer.
 #
 # Note: If using Cloudflare, set encryption mode in SSL/TLS setting to "Full" to enable CF-to-app encryption.
-proxy:
-  ssl: true
-  host: app.example.com
+# proxy:
+#   ssl: true
+#   host: app.example.com
 
-# Credentials for your image host.
+# Credentials for your image host
 registry:
-  # Specify the registry server, if you're not using Docker Hub
-  # server: registry.digitalocean.com / ghcr.io / ...
-  username: your-user
-
-  # Always use an access token rather than real password when possible.
+  username: local
   password:
     - KAMAL_REGISTRY_PASSWORD
 
