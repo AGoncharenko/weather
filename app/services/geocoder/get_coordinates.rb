@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'dotenv/load'
-require 'opencage/geocoder'
+require "dotenv/load"
+require "opencage/geocoder"
 
 module Geocoder
   class GetCoordinates

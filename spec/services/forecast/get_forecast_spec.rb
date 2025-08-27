@@ -148,10 +148,10 @@ RSpec.describe Forecast::GetForecast do
       before do
         raw_data = {
           "daily" => {
-            "time" => ["2025-08-26", "2025-08-27"],
-            "temperature_2m_max" => [75.0, 78.0],
-            "temperature_2m_min" => [65.0, 68.0],
-            "precipitation_sum" => [0.0, 2.5]
+            "time" => [ "2025-08-26", "2025-08-27" ],
+            "temperature_2m_max" => [ 75.0, 78.0 ],
+            "temperature_2m_min" => [ 65.0, 68.0 ],
+            "precipitation_sum" => [ 0.0, 2.5 ]
           }
         }
 

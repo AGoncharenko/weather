@@ -17,15 +17,15 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 # A Ruby client that tries to match Redis' API one-to-one, while still providing an idiomatic interface.
-gem 'redis', '~> 5.4', '>= 5.4.1'
+gem "redis", "~> 5.4", ">= 5.4.1"
 # A client for the OpenCage geocoding API - https://opencagedata.com/
-gem 'opencage-geocoder', '~> 3.2', '>= 3.2.4'
+gem "opencage-geocoder", "~> 3.2", ">= 3.2.4"
 # A client for OpenMeteo weather data
-gem 'open-meteo', '~> 0.3.5'
+gem "open-meteo", "~> 0.3.5"
 # Pry is a runtime developer console and IRB alternative with powerful introspection capabilities
-gem 'pry', '~> 0.15.2'
+gem "pry", "~> 0.15.2"
 # Autoload dotenv in Rails.
-gem 'dotenv-rails', '~> 3.1', '>= 3.1.8'
+gem "dotenv-rails", "~> 3.1", ">= 3.1.8"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
@@ -70,8 +70,8 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
-  gem 'rspec-rails', '~> 8.0', '>= 8.0.2'
-  gem 'vcr', '~> 6.3', '>= 6.3.1'
-  gem 'webmock', '~> 3.24'
-  gem 'rails-controller-testing'
+  gem "rspec-rails", "~> 8.0", ">= 8.0.2"
+  gem "vcr", "~> 6.3", ">= 6.3.1"
+  gem "webmock", "~> 3.24"
+  gem "rails-controller-testing"
 end

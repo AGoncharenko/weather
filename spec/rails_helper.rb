@@ -34,7 +34,7 @@ VCR.configure do |config|
   config.allow_http_connections_when_no_cassette = false
   config.default_cassette_options = {
     record: :once,
-    match_requests_on: [:method, :uri, :body]
+    match_requests_on: [ :method, :uri, :body ]
   }
 
   # Filter sensitive data

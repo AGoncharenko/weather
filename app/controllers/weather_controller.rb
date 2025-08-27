@@ -1,5 +1,5 @@
 class WeatherController < ApplicationController
-  before_action :validate_address, only: [:create]
+  before_action :validate_address, only: [ :create ]
 
   def index
   end
