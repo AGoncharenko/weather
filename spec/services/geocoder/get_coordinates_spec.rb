@@ -51,6 +51,11 @@ RSpec.describe Geocoder::GetCoordinates do
     context 'when address is present', :vcr do
       let(:address) { 'New York, NY' }
 
+      before do
+        allow(ENV).to receive(:[]).and_call_original
+        allow(ENV).to receive(:[]).with("OPENCAGE_API_KEY").and_return('fake_api_key_for_testing')
+      end
+
       it 'returns a hash with coordinates and location details' do
         VCR.use_cassette('geocoder/new_york_success') do
           result = subject
@@ -69,6 +74,11 @@ RSpec.describe Geocoder::GetCoordinates do
     context 'when geocoding a specific address', :vcr do
       let(:address) { 'San Francisco, CA' }
 
+      before do
+        allow(ENV).to receive(:[]).and_call_original
+        allow(ENV).to receive(:[]).with("OPENCAGE_API_KEY").and_return('fake_api_key_for_testing')
+      end
+
       it 'returns coordinates for San Francisco' do
         VCR.use_cassette('geocoder/san_francisco_success') do
           result = subject
@@ -83,6 +93,11 @@ RSpec.describe Geocoder::GetCoordinates do
 
     context 'when geocoding an invalid address', :vcr do
       let(:address) { 'InvalidCityThatDoesNotExist12345' }
+
+      before do
+        allow(ENV).to receive(:[]).and_call_original
+        allow(ENV).to receive(:[]).with("OPENCAGE_API_KEY").and_return('fake_api_key_for_testing')
+      end
 
       it 'returns nil for addresses that cannot be geocoded' do
         VCR.use_cassette('geocoder/invalid_address') do
