@@ -19,7 +19,7 @@ gem "jbuilder"
 # A Ruby client that tries to match Redis' API one-to-one, while still providing an idiomatic interface.
 gem "redis", "~> 5.4", ">= 5.4.1"
 # A client for the OpenCage geocoding API - https://opencagedata.com/
-gem "opencage-geocoder", "~> 3.2", ">= 3.2.4"
+gem "opencage-geocoder", "~> 3.3"
 # A client for OpenMeteo weather data
 gem "open-meteo", "~> 0.3.5"
 # Pry is a runtime developer console and IRB alternative with powerful introspection capabilities
